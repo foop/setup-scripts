@@ -1,5 +1,6 @@
 #! /bin/bash
 
+ssh-keygen
 . essentials.sh
 
 
