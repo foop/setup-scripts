@@ -1,8 +1,6 @@
 #! /bin/bash
 
-sudo apt-get install git guake
-ssh-keygen
-mkdir ~/work
+. essentials.sh
 
 
 . java.sh
