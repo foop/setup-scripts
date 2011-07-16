@@ -23,13 +23,13 @@ dir=~/apps/idea/tmp
 for f in `find $dir -name 'idea-IU-*'`
 do
   target=`echo $f | sed 's/idea-IU-\(.*\)/idea-/'`$version
-  mv $f $target
+  mv $f "~/apps/idea/idea-$version"
 done
 #rm -Rf ~/apps/idea/tmp/
 ln -s "~/apps/idea/idea-$version" ~/apps/idea/latest
 
-sudo update-alternatives --install /usr/bin/idea idea "/apps/idea/latest/bin/idea.sh" 1
-sudo update-alternatives --install /usr/bin/idea idea "/apps/idea/idea-$version/bin/idea.sh" 2
+sudo update-alternatives --install /usr/bin/idea idea "~/apps/idea/latest/bin/idea.sh" 1
+sudo update-alternatives --install /usr/bin/idea idea "~/apps/idea/idea-$version/bin/idea.sh" 2
 
 
 
