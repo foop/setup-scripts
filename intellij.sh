@@ -16,8 +16,8 @@ mkdir ~/apps
 mkdir ~/apps/idea
 cd /apps/idea
 wget "$url"
-mkdir tmp
-tar xzf "$dl" -C ./tmp
+mkdir ~/apps/idea/tmp
+tar xzf "$dl" -C ~/apps/idea/tmp
 rm "$dl"
 for f in "~/apps/idea/tmp"
 do
@@ -27,7 +27,7 @@ do
       ;;
   esac
 done
-
+rm -Rf ~/apps/idea/tmp
 ln -s "~/apps/idea/idea-$version" /apps/idea/latest
 
 sudo update-alternatives --install /usr/bin/idea idea "/apps/idea/latest/bin/idea.sh" 1
