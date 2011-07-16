@@ -19,14 +19,7 @@ wget "$url"
 mkdir ~/apps/idea/tmp
 tar xzf "$dl" -C ~/apps/idea/tmp
 rm "$dl"
-for f in "~/apps/idea/tmp"
-do
-  case $f in
-    idea-IU-[0-9]+\.[0-2])
-      mv $f "~/apps/idea/idea-$version"
-      ;;
-  esac
-done
+ls ~/apps/idea/tmp | sed 's/idea-IU-\([0-9]\{,3\}\.[0-9]\{,3\}\)/mv "&" "~/apps/idea/idea-$version"/' | sh
 rm -Rf ~/apps/idea/tmp
 ln -s "~/apps/idea/idea-$version" /apps/idea/latest
 
