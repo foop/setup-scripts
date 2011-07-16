@@ -18,14 +18,14 @@ cd ~/apps/idea
 wget "$url"
 mkdir ~/apps/idea/tmp
 tar xzf "$dl" -C ~/apps/idea/tmp
-rm "$dl"
+#rm "$dl"
 dir=~/apps/idea/tmp
 for f in `find $dir -name 'idea-IU-*'`
 do
   target=`echo $f | sed 's/idea-IU-\(.*\)/idea-/'`$version
   mv $f $target
 done
-rm -Rf ~/apps/idea/tmp/
+#rm -Rf ~/apps/idea/tmp/
 ln -s "~/apps/idea/idea-$version" ~/apps/idea/latest
 
 sudo update-alternatives --install /usr/bin/idea idea "/apps/idea/latest/bin/idea.sh" 1
