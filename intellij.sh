@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-echo "Enter groovy version or hit enter for 10.5.1"
+echo "Enter intellij version or hit enter for 10.5.1"
 read version
 if [ "$version" == "" ] 
 then
