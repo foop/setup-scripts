@@ -23,7 +23,8 @@ dir=~/apps/idea/tmp
 for f in `find $dir -name 'idea-IU-*'`
 do
   target=`echo $f | sed 's/idea-IU-\(.*\)/idea-/'`$version
-  mv $f "~/apps/idea/idea-$version"
+  mv $f $target
+  mv $target ~/apps/idea
 done
 #rm -Rf ~/apps/idea/tmp/
 ln -s "~/apps/idea/idea-$version" ~/apps/idea/latest
