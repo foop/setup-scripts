@@ -27,7 +27,7 @@ do
   mv $target ~/apps/idea
 done
 rm -Rf ~/apps/idea/tmp/
-ln -s "~/apps/idea/idea-$version" ~/apps/idea/latest
+ln -s "/home/$USER/apps/idea/idea-$version" /home/$USER/apps/idea/latest
 
 sudo update-alternatives --install /usr/bin/idea idea "/home/$USER/apps/idea/latest/bin/idea.sh" 1
 sudo update-alternatives --install /usr/bin/idea idea "/home/$USER/apps/idea/idea-$version/bin/idea.sh" 2
