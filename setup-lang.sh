@@ -8,3 +8,4 @@
 . fantom.sh
 . gosu.sh
 . android.sh
+. sbt.sh

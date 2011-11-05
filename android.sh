@@ -82,7 +82,7 @@ sudo update-alternatives --install /usr/bin/zipalign zipalign "/opt/android/late
 sudo update-alternatives --install /usr/bin/zipalign zipalign "/opt/android/sdk-$version/android-sdk-linux/tools/zipalign" 2
 
 
-echo "Update sdk? [Y/N] Y:"
+echo "Update sdk? (this takes a while) [Y/N] Y:"
 read updateSdk
 if [ "$updateSdk" != "N" ]
 then
