@@ -1,11 +1,11 @@
 #! /bin/bash
 
 
-echo "Enter sbt version or hit enter for 0.11.0"
+echo "Enter sbt version or hit enter for 0.11.1"
 read version
 if [ "$version" == "" ]
 then
-  version="0.11.0"
+  version="0.11.1"
 fi
 dl="sbt-launch.jar"
 url="http://typesafe.artifactoryonline.com/typesafe/ivy-releases/org.scala-tools.sbt/sbt-launch/$version/$dl"
