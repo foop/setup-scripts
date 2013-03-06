@@ -20,5 +20,5 @@ sudo unzip "$dl"
 sudo rm "$dl"
 sudo ln -s "/opt/play/play-$version" /opt/play/latest
 
-sudo update-alternatives --install /usr/bin/play play "/opt/ply/latest/play" 1
+sudo update-alternatives --install /usr/bin/play play "/opt/play/latest/play" 1
 sudo update-alternatives --install /usr/bin/play play "/opt/play/play-$version/play" 2
