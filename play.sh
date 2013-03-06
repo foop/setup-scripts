@@ -10,7 +10,7 @@ then
 fi
 
 dl="play-$version.zip"
-url="http://download.playframework.org/releases/$dl"
+url="http://downloads.typesafe.com/play/$version/$version.zip"
 
 echo "Setting up maven $version from $url"
 sudo mkdir -p /opt/play
