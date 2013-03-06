@@ -1,10 +1,10 @@
-#! /bin/bash
+#!/bin/sh
 
 
-defaultVersion="1.2.2"
+defaultVersion="2.1.0"
 echo "Enter play version or hit enter for $defaultVersion"
 read version
-if [ "$version" == "" ] 
+if [ -z "$version" ] 
 then
   version=$defaultVersion
 fi
@@ -13,7 +13,7 @@ dl="play-$version.zip"
 url="http://download.playframework.org/releases/$dl"
 
 echo "Setting up maven $version from $url"
-sudo mkdir /opt/play
+sudo mkdir -p /opt/play
 cd /opt/play
 sudo wget "$url"
 sudo unzip "$dl"
