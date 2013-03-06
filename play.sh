@@ -13,12 +13,8 @@ dl="play-$version.zip"
 url="http://downloads.typesafe.com/play/$version/play-$version.zip"
 
 echo "Setting up play $version from $url"
-sudo mkdir -p /opt/play
-cd /opt/play
+mkdir -p "$HOME/opt/play"
+cd "$HOME/opt/play"
 sudo wget "$url"
 sudo unzip "$dl"
 sudo rm "$dl"
-sudo ln -s "/opt/play/play-$version" /opt/play/latest
-
-sudo update-alternatives --install /usr/bin/play play "/opt/play/latest/play" 1
-sudo update-alternatives --install /usr/bin/play play "/opt/play/play-$version/play" 2
