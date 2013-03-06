@@ -28,12 +28,6 @@ sudo update-alternatives --install /usr/bin/scalac scalac "/opt/scala/scala-$ver
 sudo update-alternatives --install /usr/bin/fsc fsc "/opt/scala/latest/bin/fsc" 1
 sudo update-alternatives --install /usr/bin/fsc fsc "/opt/scala/scala-$version/bin/fsc" 2
 
-sudo update-alternatives --install /usr/bin/sbaz sbaz "/opt/scala/latest/bin/sbaz" 1
-sudo update-alternatives --install /usr/bin/sbaz sbaz "/opt/scala/scala-$version/bin/sbaz" 2
-
-sudo update-alternatives --install /usr/bin/sbaz-setup sbaz-setup "/opt/scala/latest/bin/sbaz-setup" 1
-sudo update-alternatives --install /usr/bin/sbaz-setup sbaz-setup "/opt/scala/scala-$version/bin/sbaz-setup" 2
-
 sudo update-alternatives --install /usr/bin/scalap scalap "/opt/scala/latest/bin/scalap" 1
 sudo update-alternatives --install /usr/bin/scalap scalap "/opt/scala/scala-$version/bin/scalap" 2
 
