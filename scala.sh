@@ -11,7 +11,7 @@ dl="scala-$version.tgz"
 url="http://www.scala-lang.org/downloads/distrib/files/$dl"
 
 echo "Setting up scala $version from $url"
-sudo mkdir /opt/scala
+sudo mkdir -p /opt/scala
 cd /opt/scala
 sudo wget "$url"
 sudo tar xzf "$dl"
