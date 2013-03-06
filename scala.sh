@@ -3,7 +3,7 @@
 
 echo "Enter scala version or hit enter for 2.10.0"
 read version
-if [ "$version" == "" ] 
+if [ -z "$version" ] 
 then
   version="2.10.0"
 fi
