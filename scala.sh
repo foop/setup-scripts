@@ -1,11 +1,11 @@
 #! /bin/bash
 
 
-echo "Enter scala version or hit enter for 1.9.0.1"
+echo "Enter scala version or hit enter for 2.10.3"
 read version
 if [ "$version" == "" ] 
 then
-  version="2.9.0.1"
+  version="2.10.3"
 fi
 dl="scala-$version.tgz"
 url="http://www.scala-lang.org/downloads/distrib/files/$dl"
