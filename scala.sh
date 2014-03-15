@@ -8,7 +8,7 @@ then
   version="2.10.3"
 fi
 dl="scala-$version.tgz"
-url="http://www.scala-lang.org/downloads/distrib/files/$dl"
+url="http://www.scala-lang.org/files/archive/$dl"
 
 echo "Setting up scala $version from $url"
 sudo mkdir /opt/scala
